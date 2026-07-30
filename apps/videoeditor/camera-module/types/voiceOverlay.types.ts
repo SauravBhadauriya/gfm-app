@@ -54,3 +54,10 @@ export interface AdjustSettings {
   sharpness: number;
   blur: number;
 }
+
+export interface OverlayEffect {
+  id: string;
+  type: 'blur' | 'vignette' | 'watermark' | 'gradient';
+  opacity: number;       // 0 to 1
+  intensity: number;     // 0 to 1
+}
